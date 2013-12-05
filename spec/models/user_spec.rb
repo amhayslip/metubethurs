@@ -3,6 +3,7 @@ require 'spec_helper'
 describe User do
   describe 'validations' do
     describe 'presence' do
+      
       context 'when given a :first_name, :last_name, and :email_address' do
         it 'creates a new record' do
           user = User.create(first_name: 'Dean', last_name: 'Cody', email_address: 'test@example.com')
